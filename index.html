@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f766e"><title>TMA Library | مكتبة TMA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="#"><span class="logo">T</span><span><b>TMA Library</b><small>مكتبتك الرقمية</small></span></a>
+<form id="searchForm" class="search"><input id="searchInput" placeholder="ابحث عن كتاب أو مؤلف..." aria-label="البحث"><button>بحث</button></form>
+<nav><button class="nav active" data-mode="all">الرئيسية</button><button class="nav" data-mode="free">كتب مجانية</button><button class="nav" id="myLibrary">مكتبتي <span id="savedCount">0</span></button></nav>
+</header>
+<main class="container">
+<section class="hero"><div class="hero-copy"><span class="pill">اقرأ • تعلّم • اكتشف</span><h1>كل فكرة عظيمة<br><em>تبدأ بكتاب.</em></h1><p>اكتشف كتباً جديدة واحفظ المفضلة لديك في مكتبتك الشخصية.</p><a href="#catalog" class="cta">استكشف الكتب ←</a></div><div class="hero-books" aria-hidden="true"><i></i><i></i><i></i><span>✦</span></div><div class="book-total"><b id="totalBooks">0</b> كتاباً في المكتبة</div></section>
+<section class="heading" id="catalog"><div><span class="eyebrow">مجموعتنا</span><h2>تصفّح الكتب</h2></div><select id="sort"><option value="featured">المقترحة أولاً</option><option value="title">العنوان</option><option value="rating">الأعلى تقييماً</option></select></section>
+<div id="categories" class="categories"></div><p id="resultCount" class="muted"></p><section id="grid" class="grid"></section>
+<section class="notice"><span class="notice-icon">▤</span><div><b>مكتبتك في مكان واحد</b><p>أضف الكتب إلى قائمتك الشخصية وارجع إليها بسهولة من هذا الجهاز.</p></div><span class="demo">نسخة تجريبية</span></section>
+</main>
+<footer><div class="brand"><span class="logo">T</span><span><b>TMA Library</b><small>المعرفة أقرب مما تتخيل</small></span></div><p>مشروع تعليمي تجريبي — لا يتضمن دفعاً إلكترونياً حقيقياً.</p></footer>
+<dialog id="details"><button id="closeDialog" class="close">×</button><div id="detailsBody"></div></dialog><div id="toast" class="toast" role="status"></div>
+<script src="js/books-data.js"></script><script src="js/app.js"></script>
+</body></html>
